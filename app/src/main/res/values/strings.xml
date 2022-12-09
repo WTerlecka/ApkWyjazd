@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ApkWyjazd</string>
+    <string name="ustaw_date_swojego_wyjazdu">Ustaw date swojego wyjazdu</string>
+    <string name="dodaj">Dodaj</string>
+    <string name="poczatek_wyjazdu">Poczatek wyjazdu:</string>
+    <string name="koniec_wyjazdu">Koniec wyjazdu:</string>
+</resources>
