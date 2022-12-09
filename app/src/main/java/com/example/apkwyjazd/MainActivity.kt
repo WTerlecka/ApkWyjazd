@@ -2,13 +2,21 @@ package com.example.apkwyjazd
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.CalendarView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var lista = arrayListOf<TextView>(findViewById(R.id.pocz1),findViewById(R.id.koniec1))
+        var lista = arrayListOf<TextView>(findViewById(R.id.pocz2),findViewById(R.id.koniec2))
 
+        findViewById<Button>(R.id.Btndod).setOnClickListener {
+            var
+            for(i in 0..2){
+                lista[i].text =
+            }
+        }
     }
 }
