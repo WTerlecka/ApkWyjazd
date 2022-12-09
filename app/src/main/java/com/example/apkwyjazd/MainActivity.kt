@@ -10,10 +10,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var lista = arrayListOf<TextView>(findViewById(R.id.pocz2),findViewById(R.id.koniec2))
+        val lista = arrayListOf<TextView>(findViewById(R.id.pocz2),findViewById(R.id.koniec2))
 
         findViewById<Button>(R.id.Btndod).setOnClickListener {
-            var kalendarz = findViewById<CalendarView>(R.id.calendarView)
+            val kalendarz = findViewById<CalendarView>(R.id.calendarView)
             for(i in 0..2){
                 lista[i].text = kalendarz.date.toString()
             }
