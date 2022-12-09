@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
         var lista = arrayListOf<TextView>(findViewById(R.id.pocz2),findViewById(R.id.koniec2))
 
         findViewById<Button>(R.id.Btndod).setOnClickListener {
-            var
+            var kalendarz = findViewById<CalendarView>(R.id.calendarView)
             for(i in 0..2){
-                lista[i].text =
+                lista[i].text = kalendarz.date.toString()
             }
         }
     }
