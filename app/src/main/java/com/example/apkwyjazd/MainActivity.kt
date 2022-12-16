@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         kalendarz.minDate = System.currentTimeMillis()
         kalendarz.maxDate = LocalDate.now().plusYears(2).atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli()
+        kalendarz.setFirstDayOfWeek(Calendar.MONDAY);
 
         val dataPocz = mutableListOf<Int>(0,0,0)
         val dataKon = mutableListOf<Int>(0,0,0)
