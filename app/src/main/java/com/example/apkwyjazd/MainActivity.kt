@@ -7,6 +7,8 @@ import android.widget.CalendarView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import java.time.LocalDate
+import java.time.ZoneId
 
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.0)
@@ -19,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         var pocz2 = findViewById<TextView>(R.id.pocz)
         var kon2 = findViewById<TextView>(R.id.koniec)
         var il = findViewById<TextView>(R.id.il)
+
+        kalendarz.minDate = System.currentTimeMillis()
+        kalendarz.maxDate = LocalDate.now().plusYears(2).atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli()
 
 
 
