@@ -4,4 +4,6 @@
     <string name="dodaj">Dodaj</string>
     <string name="poczatek_wyjazdu">Poczatek wyjazdu:</string>
     <string name="koniec_wyjazdu">Koniec wyjazdu:</string>
+    <string name="dodaj_pocz_tek_wyjazdu">Dodaj początek wyjazdu</string>
+    <string name="dodaj_koniec_wyjazdu">Dodaj koniec wyjazdu</string>
 </resources>
